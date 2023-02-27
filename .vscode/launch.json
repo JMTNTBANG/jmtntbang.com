@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "firefox",
             "request": "launch",
             "name": "Open Website",
-            "file": "/home/jmtntbang/Documents/GitHub/jmtntbang.com/index.html"
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }

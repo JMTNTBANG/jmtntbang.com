@@ -8,30 +8,26 @@
     
 </head>
 <body>
-    <p class = 'title'>
+    <p style = 'text-align: center; font-size: 100px'>
         Welcome To JMTNTBANG.com
     </p>
     <div style="align-items: center; justify-content: center; display: flex; width: 100%; height: 130%;">
-        <div id = youtube class = 'anim-3s largeButton' style = 'background-color: rgb(160, 12, 12); display: inline; float: none; display: inline-block;'>
-            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 20px; color: white; font-size: 50px;' href="#">
-                YouTube
+        <div id = server class = 'largeButton' style = 'background-color: rgb(88, 101, 242); display: inline; float: none; display: inline-block;'>
+            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 20px; color: white; font-size: 50px; ' href = '#'>
+                Server
             </a>
         </div>
-
-        <div id = discord class = 'anim-4s largeButton', style = 'background-color: rgb(88, 101, 242); display: inline; float: none; display: inline-block;'>
+        <div id = bots class = 'largeButton', style = 'background-color: rgb(88, 101, 242); display: inline; float: none; margin: 20px; display: inline-block;'>
             <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 20px; color: white; font-size: 50px;' href = '#'>
-                Discord
-            </a>
-            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 100px; color: white; font-size: 25px;' href = '#'>
-                Bots and Servers
+                Bots
             </a>
         </div>
     </div>
 </body>
 
 <script>
-    element = document.getElementById('youtube');
-    element2 = document.getElementById('discord')
+    element = document.getElementById('server');
+    element2 = document.getElementById('bots')
 
     // reset the transition by...
     element.addEventListener("click", function(e) {
@@ -42,7 +38,7 @@
         element.classList.add("largeButtonReverse");
         element2.classList.add("largeButtonReverse");
         setTimeout(() => {
-            window.location.replace("https://youtube.com/@jmtntbang")
+            window.location.replace("https://discord.gg/2ZcYyxgE5G")
         }, 3000);
         
     }, false);
@@ -51,15 +47,11 @@
         e.preventDefault;
         element.classList.remove("largeButton");
         element2.classList.remove("largeButton");
-        element.classList.remove("anim-3s");
-        element2.classList.remove("anim-4s");
         void element.offsetWidth;
         element.classList.add("largeButtonReverse");
         element2.classList.add("largeButtonReverse");
-        element.classList.add("anim-0s");
-        element2.classList.add("anim-0s");
         setTimeout(() => {
-            window.location.replace("./discord.html")
+            window.location.replace("./discord/bots.html")
         }, 3000);
     }, false);
 </script>

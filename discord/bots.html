@@ -4,34 +4,34 @@
         JMTNTBANG
     </title>
     <!-- Import Styles -->
-    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "../styles.css">
     
 </head>
 <body>
-    <p class = 'title'>
+    <p style = 'text-align: center; font-size: 100px'>
         Welcome To JMTNTBANG.com
     </p>
     <div style="align-items: center; justify-content: center; display: flex; width: 100%; height: 130%;">
-        <div id = youtube class = 'anim-3s largeButton' style = 'background-color: rgb(160, 12, 12); display: inline; float: none; display: inline-block;'>
-            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 20px; color: white; font-size: 50px;' href="#">
-                YouTube
+        <div id = 'tcgb' class = 'largeButton' style = 'background-color: rgb(242, 88, 88); display: inline; float: none;'>
+            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 30px; color: white; font-size: 50px;'>
+                The Card Game Bot
             </a>
-        </div>
-
-        <div id = discord class = 'anim-4s largeButton', style = 'background-color: rgb(88, 101, 242); display: inline; float: none; display: inline-block;'>
-            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 20px; color: white; font-size: 50px;' href = '#'>
-                Discord
-            </a>
-            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 100px; color: white; font-size: 25px;' href = '#'>
-                Bots and Servers
+            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 150px; color: white; font-size: 25px;'>
+                (Not Yet Released)
             </a>
         </div>
     </div>
+
+    <!-- <div id = bots class = 'largeButton', style = 'right: 35%; background-color: rgb(88, 101, 242);'>
+        <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 20px; color: white; font-size: 50px;'>
+            
+        </a>
+    </div> -->
 </body>
 
 <script>
-    element = document.getElementById('youtube');
-    element2 = document.getElementById('discord')
+    element = document.getElementById('server');
+    element2 = document.getElementById('bots')
 
     // reset the transition by...
     element.addEventListener("click", function(e) {
@@ -42,7 +42,7 @@
         element.classList.add("largeButtonReverse");
         element2.classList.add("largeButtonReverse");
         setTimeout(() => {
-            window.location.replace("https://youtube.com/@jmtntbang")
+            window.location.replace("https://discord.gg/2ZcYyxgE5G")
         }, 3000);
         
     }, false);
@@ -59,7 +59,7 @@
         element.classList.add("anim-0s");
         element2.classList.add("anim-0s");
         setTimeout(() => {
-            window.location.replace("./discord.html")
+            window.location.replace("")
         }, 3000);
     }, false);
 </script>
