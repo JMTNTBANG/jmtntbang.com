@@ -11,12 +11,12 @@
     <p style = 'text-align: center; font-size: 100px'>
         Welcome To JMTNTBANG.com
     </p>
-    <div style="align-items: center; justify-content: center; display: flex; width: 100%; height: 130%;">
-        <div id = 'tcgb' class = 'largeButton' style = 'background-color: rgb(242, 88, 88); display: inline; float: none;'>
-            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 30px; color: white; font-size: 50px;'>
+    <div style="align-items: center; justify-content: center; display: flex; width: 100%; height: 100%; position: fixed; bottom: -350px; left: 0px">
+        <div id = 'tcgb' class = 'largeButton' style = 'background-color: rgb(242, 88, 88); float: none; margin: 20px; display: inline-block;'>
+            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 30px; color: white; font-size: 50px;' href = '#'>
                 The Card Game Bot
             </a>
-            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 150px; color: white; font-size: 25px;'>
+            <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 150px; color: white; font-size: 25px;' href = '#'>
                 (Not Yet Released)
             </a>
         </div>
@@ -30,36 +30,17 @@
 </body>
 
 <script>
-    element = document.getElementById('server');
-    element2 = document.getElementById('bots')
+    element = document.getElementById('tcgb');
 
     // reset the transition by...
     element.addEventListener("click", function(e) {
         e.preventDefault;
         element.classList.remove("largeButton");
-        element2.classList.remove("largeButton");
         void element.offsetWidth;
         element.classList.add("largeButtonReverse");
-        element2.classList.add("largeButtonReverse");
         setTimeout(() => {
-            window.location.replace("https://discord.gg/2ZcYyxgE5G")
+            window.location.replace("https://github.com/jmtntbang/the-card-game-bot")
         }, 3000);
         
-    }, false);
-
-    element2.addEventListener("click", function(e) {
-        e.preventDefault;
-        element.classList.remove("largeButton");
-        element2.classList.remove("largeButton");
-        element.classList.remove("anim-3s");
-        element2.classList.remove("anim-4s");
-        void element.offsetWidth;
-        element.classList.add("largeButtonReverse");
-        element2.classList.add("largeButtonReverse");
-        element.classList.add("anim-0s");
-        element2.classList.add("anim-0s");
-        setTimeout(() => {
-            window.location.replace("")
-        }, 3000);
     }, false);
 </script>

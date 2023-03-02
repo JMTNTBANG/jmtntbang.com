@@ -13,8 +13,8 @@
 }
 
 @keyframes largeButton {
-    0% { bottom: -250px }
-    50% { bottom: -10%; }
+    0% { bottom: -300px; opacity: 0%; }
+    50% { bottom: -10%; opacity: 100%; }
     100% { transform:translateY(-250%); }
 }
 
