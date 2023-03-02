@@ -11,7 +11,7 @@
     <p class = 'title'>
         Welcome To JMTNTBANG.com
     </p>
-    <div style="align-items: center; justify-content: center; display: flex; width: 100%; height: 100%; position: fixed; bottom: -350px; left: 0px">
+    <div style="align-items: center; justify-content: center; display: flex; width: 100%; height: 100%; position: fixed; bottom: -350px; left: 0px;">
         <div id = youtube class = 'anim-3s largeButton' style = 'background-color: rgb(160, 12, 12); float: none; margin: 20px; display: inline-block;'>
             <a style = 'position: absolute; width: 100%; height: 100%; text-align: center; top: 20px; color: white; font-size: 50px;' href="#">
                 YouTube
@@ -29,6 +29,11 @@
 </body>
 
 <script>
+    // const isMobile = navigator.userAgentData.mobile;
+    // if (isMobile = true) {
+    //     window.location.replace("https://mobile.jmtntbang.com")
+    // }
+
     element = document.getElementById('youtube');
     element2 = document.getElementById('discord')
 
@@ -37,9 +42,13 @@
         e.preventDefault;
         element.classList.remove("largeButton");
         element2.classList.remove("largeButton");
+        element.classList.remove("anim-3s");
+        element2.classList.remove("anim-4s");
         void element.offsetWidth;
         element.classList.add("largeButtonReverse");
         element2.classList.add("largeButtonReverse");
+        element.classList.add("anim-0s");
+        element2.classList.add("anim-0s");
         setTimeout(() => {
             window.location.replace("https://youtube.com/@jmtntbang")
         }, 3000);
