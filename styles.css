@@ -3,112 +3,15 @@
         src: url("fixedsys.ttf") format("truetype");
   }
 
-@keyframes title {
-    from {
-        font-size: 0px;
-    }
-    to {
-        font-size: 100px;
-    }
-}
-
-@keyframes largeButton {
-    0% { bottom: -300px; opacity: 0%; }
-    50% { bottom: -10%; opacity: 100%; }
-    100% { transform:translateY(-250%); }
-}
-
 .title {
     text-align: center;
-    -webkit-animation: "title";
-    -moz-animation: "title";
-    -o-animation: "title";
-    animation: "title";
-    -webkit-animation-duration: 2.5s;
-    -moz-animation-duration: 2.5s;
-    -o-animation-duration: 2.5s;
-    animation-duration: 2.5s;
-    -webkit-animation-timing-function: ease-out;
-    -moz-animation-animation-timing-function: ease-out;
-    -o-animation-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    font-size: 100px;
 }
 
 .largeButton {
     border-radius: 25px;
-    position: relative;
-    bottom: -250px;
     width: 250px;
     height: 250px;
-    -webkit-animation: "largeButton";
-    -moz-animation: "largeButton";
-    -o-animation: "largeButton";
-    animation: "largeButton";
-    -webkit-animation-duration: 2.5s;
-    -moz-animation-duration: 2.5s;
-    -o-animation-duration: 2.5s;
-    animation-duration: 2.5s;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-animation-timing-function: ease-in-out;
-    -o-animation-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-.largeButtonReverse {
-    border-radius: 25px;
-    position: relative;
-    bottom: -250px;
-    width: 250px;
-    height: 250px;
-    -webkit-animation: "largeButton";
-    -moz-animation: "largeButton";
-    -o-animation: "largeButton";
-    animation: "largeButton";
-    -webkit-animation-duration: 2.5s;
-    -moz-animation-duration: 2.5s;
-    -o-animation-duration: 2.5s;
-    animation-duration: 2.5s;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-animation-timing-function: ease-in-out;
-    -o-animation-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: reverse;
-    -moz-animation-direction: reverse;
-    -o-animation-direction: reverse;
-    animation-direction: reverse;
-}
-
-.anim-0s {
-    -webkit-animation-delay: 0s;
-    -moz-animation-delay: 0s;
-    -o-animation-delay: 0s;
-    animation-delay: 0s;
-}
-
-.anim-3s {
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    -o-animation-delay: 3s;
-    animation-delay: 3s;
-}
-
-.anim-4s {
-    -webkit-animation-delay: 4s;
-    -moz-animation-delay: 4s;
-    -o-animation-delay: 4s;
-    animation-delay: 4s;
 }
 
 body{
