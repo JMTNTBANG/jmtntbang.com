@@ -3,7 +3,7 @@ const session = require("express-session");
 const http = require("http");
 const https = require("https");
 const fs = require("fs")
-
+const config = require("./config.json")
 
 
 // Web Server Initialization
