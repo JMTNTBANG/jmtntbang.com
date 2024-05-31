@@ -1,0 +1,23 @@
+{
+  "name": "jmtntbang.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMTNTBANG/jmtntbang.com.git"
+  },
+  "author": "JMTNTBANG",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JMTNTBANG/jmtntbang.com/issues"
+  },
+  "homepage": "https://github.com/JMTNTBANG/jmtntbang.com#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}

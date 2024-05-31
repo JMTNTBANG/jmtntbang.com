@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "firefox",
+            "command": "npm test",
+            "name": "Debug",
             "request": "launch",
-            "name": "Open Website",
-            "file": "${workspaceFolder}/index.html"
+            "type": "node-terminal"
         }
     ]
 }
