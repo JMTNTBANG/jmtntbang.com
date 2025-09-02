@@ -52,12 +52,12 @@ try {
       website
     )
     .listen(443, () => {
-      console.log("HTTPS Server running on port 443");
+      console.log("HTTPS Server running on port 433");
     });
 } catch {
   console.log("Caution: Connections will not be secured");
 }
 const httpServer = http.createServer(website);
-httpServer.listen(8080, () => {
-  console.log("HTTP Server running on port 8080");
+httpServer.listen(80, () => {
+  console.log("HTTP Server running on port 80");
 });

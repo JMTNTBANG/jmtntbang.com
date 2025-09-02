@@ -1,0 +1,9 @@
+services:
+    jmtntbang.com:
+        network_mode: bridge
+        working_dir: /app
+        ports:
+            - 55000:80
+        restart: always
+        image: jmtntbang.com:latest
+        container_name: jmtntbang.com
